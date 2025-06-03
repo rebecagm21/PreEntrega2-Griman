@@ -1,0 +1,294 @@
+* {
+    font-family: "Comfortaa", sans-serif;
+}
+
+/*Inicio Header INICIO*/
+.header-container {
+    background-image: url(../img/puppiesback.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80 vh;
+    position: relative;
+    object-fit: fill;
+}
+
+.background-oscurecer {
+    width: 100%;
+    height: 100%;
+    background-color: #dfdfdf4d;
+
+}
+
+.contenedor-header-superior {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+}
+
+.enlaces-header ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.header-container a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.h1-index {
+    color: #000000;
+    font-weight: 1000;
+    font-size: xx-large;
+}
+
+.center-container {
+    text-align: center;
+}
+
+.boton-header {
+    background-color: #000000;
+    border: none;
+    height: 2.5rem;
+    width: 8rem;
+    color: #ffffff;
+    padding: 1rem, 2rem;
+}
+
+.boton-registro {
+    background-color: #000000;
+    border: none;
+    width: 8rem;
+    color: #ffffff;
+}
+
+.iconos a {
+    display: inline-block;
+    width: 24px;
+
+}
+
+.logo {
+    display: inline-block;
+    width: 64px;
+    height: 32px;
+}
+
+@media screen and (min-width: 375px) {
+    .enlaces-container {
+        flex-wrap: wrap;
+    }
+
+    .iconos a {
+        display: inline-block;
+        width: 36px;
+        height: 36px;
+    }
+
+    .logo {
+        display: inline-block;
+        width: 124px;
+        height: 60px;
+    }
+}
+
+
+
+
+
+
+/*Inicio Header GIFT CARD*/
+.header-container-gift {
+    background-image: url(../img/gitfCardBackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+ul {
+    list-style: none;
+}
+
+.header-container-gift a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/*Inicio Header AL MAYOR*/
+.header-container-almayor {
+    background-image: url(../img/ventasAlMayorBackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.header-container-almayor a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+/*Inicio Header UBICACION\*/
+.header-container-ubicacion {
+    background-image: url(../img/ubicacionBackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.header-container-ubicacion a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/*Inicio Header PRODUCTOS*/
+.header-container-productos {
+    background-image: url(../img/productosBackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.header-container-productos a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+/*Inicio Main INICIO*/
+h2 {
+    text-align: left;
+}
+
+img {
+    width: 15rem;
+}
+
+.favoritos-container {
+    background-image: url(../img/backgroundMain.jpg);
+    text-align: center;
+    background-size: cover;
+    height: 20rem;
+}
+
+.boton-favoritos {
+    background-color: #000000;
+    border: none;
+    width: 6rem;
+    color: #ffffff;
+}
+
+.card {
+    width: 20rem;
+}
+
+.all-category {
+    width: 20rem;
+}
+
+.product-imag {
+    width: 100%;
+}
+
+.all-imag {
+    width: 100%;
+}
+
+.productos-flex-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.infaltable-container {
+    background-color: hsl(0, 0%, 0%);
+
+    .infaltable-tipografia {
+        color: #ffffff;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+/*Inicio Main GIFTCARD*/
+h1 {
+    text-align: center;
+    font-weight: 1000;
+    font-size: xx-large;
+}
+
+.boton-giftcard {
+    background-color: #000000;
+    border: none;
+    width: 10rem;
+    color: #ffffff;
+}
+
+/*Inicio Main ALMAYOR*/
+.boton-almayor {
+    background-color: #000000;
+    border: none;
+    width: 10rem;
+    color: #ffffff;
+}
+
+/*Inicio Main UBICACION*/
+.boton-ubicacion {
+    background-color: #000000;
+    border: none;
+    width: 12rem;
+    color: #ffffff;
+}
+
+/*Inicio Main PRODUCTOS*/
+.boton-productos {
+    background-color: #ffffff;
+    border: none;
+    width: 8rem;
+    color: #000000;
+}
+
+
+/*Inicio Footer INICIO*/
+.footer-container {
+    background-color: #000000;
+    width: 100%;
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.footer-container h3 {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.enlaces-container {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    padding: 45px;
+}
