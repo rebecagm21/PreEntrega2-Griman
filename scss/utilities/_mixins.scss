@@ -1,0 +1,12 @@
+@mixin gridMarco ($gdWidth, $gdHeight, $gdBorderRa, $gdMargin, $gdPadding) {
+    width: $gdWidth;
+    height: $gdHeight;
+    border-radius: $gdBorderRa;
+    margin: $gdMargin;
+    padding: $gdPadding;
+}
+
+@mixin fontChange ($fWeight, $fsize) {
+    font-weight: $fWeight;
+    font-size: $fsize;
+}

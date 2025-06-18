@@ -1,0 +1,60 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+@use "../utilities/extends";
+
+/*PAGE INICIO*/
+/*Inicio Header*/
+.enlaces-header {
+    visibility: hidden;
+}
+
+.menu-buscar a {
+    @include mixins.gridMarco (24px, 24px, 0px, 0px, 0px);
+}
+
+.navbar-toggler-icon {
+    @include mixins.fontChange (lighter, medium);
+}
+
+.iconos a {
+    display: inline-block;
+    width: 24px;
+    justify-items: center;
+}
+
+.logo-menu {
+    @include mixins.gridMarco (64px, 32px, 0px, 0px, 0px);
+}
+
+.contenedor-nav {
+    display: flex;
+    justify-content: space-between;
+    @include mixins.gridMarco (100%, 28px, 0px, 16px, 0px);
+}
+
+.logo-header {
+    @include mixins.gridMarco (126px, 62px, 0px, 0px, 0px);
+}
+
+.enlaces-header {
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.enlaces-header ul {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header-container a {
+    @extend %textDecorationBlack;
+}
+
+.edicion-size {
+    @include mixins.fontChange (bold, 1rem);
+    margin: 40px 0px 0px;
+}

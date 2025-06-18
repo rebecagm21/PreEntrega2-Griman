@@ -1,0 +1,274 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+@use "../utilities/extends";
+
+/*Inicio main*/
+.center-container {
+    background-image: url(../img/puppiesback.jpg);
+    @extend %headerCenterContainer;
+}
+
+.h1-index {
+    color: variables.$colorPrimary;
+    @include mixins.fontChange (bolder, xx-large);
+}
+
+.boton-main {
+    background-color: variables.$colorPrimary;
+    color: variables.$colorSecundary;
+    border: none;
+    @include mixins.gridMarco (8rem, 2rem, 8px, 0px, 1px 6px);
+    @include mixins.fontChange (bold, smaller);
+}
+
+.category-over {
+    background-image: url(/img/cateOver.jpg);
+    @extend %categoryDesing;
+}
+
+.category-ts {
+    background-image: url(/img/cateTshirt.jpg);
+    @extend %categoryDesing;
+}
+
+.category-bt {
+    background-image: url(/img/cateBabyTee.jpg);
+    @extend %categoryDesing;
+}
+
+.categories {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.categories h3 {
+    color: variables.$colorSecundary;
+}
+
+.line {
+    height: 1px;
+    background-color: variables.$colorPrimary;
+    border-radius: 4px;
+    margin: 20px;
+}
+
+.all-category {
+    background-image: url(/img/malibu.jpg);
+    @extend %centerCategory;
+}
+
+.all-category h4 {
+    @extend %categoryTitulo;
+}
+
+.all-category-snoopy {
+    background-image: url(/img/manhattan.jpg);
+    @extend %centerCategory;
+}
+
+.all-category-snoopy h4 {
+    @extend %categoryTitulo;
+}
+
+h2 {
+    text-align: left;
+}
+
+img {
+    background-size: cover;
+    @include mixins.gridMarco (100%, 284px, 4px, 0px, 0px);
+}
+
+.kapu-card {
+    @include mixins.gridMarco (100%, 350px, 4px, 0px, 0px);
+}
+
+.productos-container {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 16px 0px;
+}
+
+.kapu-card h3 {
+    color: variables.$colorPrimary;
+    @include mixins.fontChange (bold, 20px);
+    margin: 8px 0px;
+}
+
+.next {
+    display: none;
+}
+
+.slider {
+    margin: 20px;
+}
+
+.infaltable-container {
+    background-color: variables.$colorPrimary;
+    padding: 12px;
+
+    .infaltable-tipografia {
+        color: variables.$colorSecundary;
+        @include mixins.fontChange (bolder, 24px);
+        text-align: center;
+    }
+}
+
+.registro {
+    margin: 20px;
+}
+
+.registro h3 {
+    font-size: 20px;
+}
+
+.email {
+    @include mixins.gridMarco (100%, 32px, 4px, 6px 0px, 6px);
+}
+
+.boton-registro {
+    @extend %botonpages;
+}
+
+/*PAGE GIFT CARD*/
+/*Inicio MAIN*/
+.center-container-gift {
+    background-image: url(../img/gitfCardBackground.jpg);
+    @extend %headerCenterContainer;
+}
+
+.center-container-gift h1 {
+    color: variables.$colorSecundary;
+    @include mixins.fontChange (bolder, xx-large);
+}
+
+.giftcard img {
+    @include mixins.gridMarco (85%, 70%, 0px, 20px, 0px);
+    justify-content: center;
+}
+
+.boton-giftcard {
+    @extend %botonpages;
+}
+
+.gift {
+    margin: 20px;
+}
+
+.gift h2 {
+    @include mixins.fontChange (bolder, 32px);
+}
+
+/*PAGE UBICACION*/
+/*Inicio MAIN*/
+.center-container-ubi {
+    background-image: url(../img/ubicacionBackground.jpg);
+    @extend %headerCenterContainer;
+}
+
+.center-container-ubi h1 {
+    color: variables.$colorSecundary;
+    @include mixins.fontChange (bolder, xx-large);
+}
+
+.boton-ubicacion {
+    @extend %botonpages;
+}
+
+.gps-img img {
+    background-size: cover;
+    @include mixins.gridMarco (100%, 100%, 12px, 0px, 0px);
+}
+
+.gps-img {
+    width: 100%;
+    height: 60%;
+    align-content: center;
+}
+
+.ubi {
+    margin: 20px;
+}
+
+.ubi p {
+    @include mixins.fontChange (small, 16px);
+}
+
+.direccion {
+    margin: 20px 0px;
+}
+
+/*PAGE ALMAYOR*/
+/*Inicio main*/
+.center-container-mayor {
+    background-image: url(../img/ventasAlMayorBackground.jpg);
+    @extend %headerCenterContainer;
+}
+
+.center-container-mayor h1 {
+    color: variables.$colorSecundary;
+}
+
+.boton-almayor {
+    @extend %botonpages;
+}
+
+.preguntas h2 {
+    @include mixins.fontChange (bolder, 28px);
+    margin-block-end: 40px;
+    align-content: center;
+}
+
+.preguntas h3 {
+    @include mixins.fontChange (bold, 20px);
+    margin-block-end: 20px;
+    margin: 8px 0px;
+}
+
+.preguntas {
+    margin: 20px;
+}
+
+.pregunta {
+    margin: 24px 0px;
+}
+
+/*PAGE PRODUCTOS*/
+/*Inicio MAIN*/
+.center-container-productos {
+    background-image: url(../img/productosBackground.jpg);
+    @extend %headerCenterContainer;
+}
+
+.boton-productos {
+    background-color: variables.$colorSecundary;
+    border: none;
+    @include mixins.gridMarco (180px, 32px, 4px, 6px 0px, 0px);
+    color: variables.$colorPrimary;
+}
+
+.filtros a {
+    @extend %textDecorationBlack;
+}
+
+.filtros {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 20px;
+    padding: 0px;
+}
+
+.todo {
+    @include mixins.fontChange (bold, 16px);
+}
+
+.center-container-productos h1 {
+    color: variables.$colorSecundary;
+    @include mixins.fontChange (bolder, 28px);
+}

@@ -1,0 +1,42 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+@use "../utilities/extends";
+
+/*Inicio Footer*/
+.footer-container {
+    background-color: variables.$colorPrimary;
+    width: 100%;
+}
+
+.footer-container a {
+    @extend %textDecorationWhite;
+    @include mixins.fontChange (lighter, 16px);
+}
+
+.footer-container h3 {
+    @extend %textDecorationWhite;
+    @include mixins.fontChange (bolder, 16px);
+}
+
+.enlaces-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.enlaces-container ul {
+    padding: 0%;
+    margin: 0%;
+}
+
+.logo-footer {
+    margin: 20px, 0px;
+    padding: 40px;
+}
+
+.enlaces {
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+}

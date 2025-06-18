@@ -1,11 +1,14 @@
+@use "./variables";
+
+
 %textDecorationBlack {
     text-decoration: none;
-    color: $colorPrimary;
+    color: variables.$colorPrimary;
 }
 
 %textDecorationWhite {
     text-decoration: none;
-    color: $colorSecundary;
+    color: variables.$colorSecundary;
 }
 
 %headerCenterContainer {
@@ -25,12 +28,12 @@
 }
 
 %botonpages {
-    background-color: $colorPrimary;
+    background-color: variables.$colorPrimary;
     border: none;
     border-radius: 4px;
     width: 100%;
     height: 32px;
-    color: $colorSecundary;
+    color: variables.$colorSecundary;
     margin: 6px 0px;
 }
 
@@ -53,11 +56,11 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 16px 8px;
-    color: $colorSecundary;
+    color: variables.$colorSecundary;
 }
 
 %categoryTitulo {
-    color: $colorSecundary;
+    color: variables.$colorSecundary;
     font-size: 54px;
     font-weight: bolder;
 }

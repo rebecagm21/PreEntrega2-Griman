@@ -1,0 +1,235 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+@use "../utilities/extends";
+
+
+@media screen and (min-width: 376px) {
+
+    /*PAGE INICIO*/
+    /*Inicio header*/
+    .enlaces-header {
+        visibility: visible;
+    }
+
+    .contenedor-nav {
+        display: none;
+    }
+
+    .container-fluid {
+        display: none;
+    }
+
+    .iconos a {
+        display: inline-block;
+        @include mixins.gridMarco (36px, 36px, 0px, 0px, 0px);
+    }
+
+    .logo-header {
+        display: inline-block;
+        @include mixins.gridMarco (124px, 60px, 0px, 0px, 0px);
+    }
+
+    /*Inicio main*/
+    .categories {
+        margin: 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 20px;
+    }
+
+    .category-over {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        height: auto;
+    }
+
+    .slider {
+        margin: 40px;
+    }
+
+    .kapu-card {
+        @include mixins.gridMarco (320px, 350, 4px, 0px, 0px);
+    }
+
+    .productos-container {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 16px 0px;
+    }
+
+    .slider h3 {
+        color: variables.$colorPrimary;
+        @include mixins.fontChange (bold, 20px);
+        margin: 8px 0px;
+    }
+
+    .all-category {
+        background-image: url(/img/malibu.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 320px;
+    }
+
+    .all-category-snoopy {
+        background-image: url(/img/manhattan.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 320px;
+    }
+
+    .infaltable-tipografia {
+        @include mixins.fontChange (bolder, 36px);
+        text-align: center;
+    }
+
+    .registro {
+        margin: 40px;
+        gap: 2rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .registro h3 {
+        @include mixins.fontChange (bold, 32px);
+    }
+
+    .registro p {
+        @include mixins.fontChange (bold, 24px);
+    }
+
+    .email {
+        @include mixins.gridMarco (300px, 50px, 4px, 6px 0px, 6px);
+    }
+
+    .boton-registro {
+        @include mixins.gridMarco (300px, 50px, 4px, 6px 0px, 0px);
+    }
+
+    .boton-input {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .registro-titulo {
+        width: 100%;
+    }
+
+
+    /*Inicio Footer*/
+    .enlaces-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer-container {
+        padding: 20px;
+    }
+
+    /*PAGE GIFTCARD*/
+    /*Inicio Main*/
+    .gift {
+        margin: 40px;
+        gap: 2rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .gift p {
+        @include mixins.fontChange (light, 20px);
+    }
+
+    .gift-info {
+        align-content: center;
+    }
+
+    .boton-giftcard {
+        @include mixins.gridMarco (300px, 50px, 4px, 6px 0px, 0px);
+    }
+
+    /*PAGE UbICACION*/
+    /*Inicio Main*/
+
+    .gps-img img {
+        background-size: cover;
+        background-position: center center;
+        @include mixins.gridMarco (100%, 100%, 24px, 0px, 0px);
+    }
+
+    .gps-img {
+        width: 80%;
+        height: 380px;
+    }
+
+    .ubi {
+        margin: 40px;
+        gap: 2rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .ubi p {
+        @include mixins.fontChange (small, 24px);
+    }
+
+    .direccion {
+        margin: 20px 0px;
+        align-content: center
+    }
+
+    .boton-ubicacion {
+        @include mixins.gridMarco (300px, 50px, 4px, 6px 0px, 0px);
+    }
+
+    /*PAGE ALMAYOR*/
+    /*Inicio Main*/
+
+    .preguntas hr {
+        display: none;
+    }
+
+    .pre-rep {
+        margin: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 20px;
+    }
+
+    .boton-almayor {
+        @include mixins.gridMarco (300px, 50px, 4px, 6px 0px, 0px);
+    }
+
+    .preguntas {
+        justify-items: center;
+    }
+
+    .pregunta h3 {
+        @include mixins.fontChange (bold, 28px);
+    }
+
+    .pregunta p {
+        @include mixins.fontChange (bold, 20px);
+    }
+
+    .pregunta {
+        margin: 0px 0px;
+    }
+
+    /*PAGE Productos*/
+    /*Inicio Main*/
+
+    .filtros {
+        margin: 40px;
+    }
+
+    .todo {
+        @include mixins.fontChange (bold, 16px);
+    }
+
+}

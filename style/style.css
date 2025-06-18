@@ -1,14 +1,14 @@
-.header-container a {
+.filtros a, .header-container a {
   text-decoration: none;
   color: #000000;
 }
 
-.footer-container a {
+.footer-container a, .footer-container h3 {
   text-decoration: none;
   color: #ffffff;
 }
 
-.center-container-productos, .center-container-mayor, .center-container-ubi, .center-container-gift, .center-container {
+.center-container, .center-container-gift, .center-container-ubi, .center-container-mayor, .center-container-productos {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -24,7 +24,7 @@
   margin: 0px 0px 20px 0px;
 }
 
-.boton-almayor, .boton-ubicacion, .boton-giftcard, .boton-registro {
+.boton-registro, .boton-giftcard, .boton-ubicacion, .boton-almayor {
   background-color: #000000;
   border: none;
   border-radius: 4px;
@@ -34,7 +34,7 @@
   margin: 6px 0px;
 }
 
-.category-bt, .category-ts, .category-over {
+.category-over, .category-ts, .category-bt {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -45,7 +45,7 @@
   height: 8rem;
 }
 
-.all-category-snoopy, .all-category {
+.all-category, .all-category-snoopy {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -56,19 +56,49 @@
   color: #ffffff;
 }
 
-.all-category-snoopy h4, .all-category h4 {
+.all-category h4, .all-category-snoopy h4 {
   color: #ffffff;
   font-size: 54px;
   font-weight: bolder;
 }
 
-* {
-  font-family: "Comfortaa", sans-serif;
+/*Inicio Footer*/
+.footer-container {
+  background-color: #000000;
+  width: 100%;
 }
 
-body {
-  overflow: scroll !important;
-  padding: 0 !important;
+.footer-container a {
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+.footer-container h3 {
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.enlaces-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.enlaces-container ul {
+  padding: 0%;
+  margin: 0%;
+}
+
+.logo-footer {
+  margin: 20px, 0px;
+  padding: 40px;
+}
+
+.enlaces {
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
 }
 
 /*PAGE INICIO*/
@@ -80,9 +110,13 @@ body {
 .menu-buscar a {
   width: 24px;
   height: 24px;
+  border-radius: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .navbar-toggler-icon {
+  font-weight: lighter;
   font-size: medium;
 }
 
@@ -95,19 +129,27 @@ body {
 .logo-menu {
   width: 64px;
   height: 32px;
+  border-radius: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .contenedor-nav {
   display: flex;
-  width: 100%;
   justify-content: space-between;
+  width: 100%;
   height: 28px;
+  border-radius: 0px;
   margin: 16px;
+  padding: 0px;
 }
 
 .logo-header {
   width: 126px;
   height: 62px;
+  border-radius: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .enlaces-header {
@@ -125,6 +167,7 @@ body {
 }
 
 .edicion-size {
+  font-weight: bold;
   font-size: 1rem;
   margin: 40px 0px 0px;
 }
@@ -142,12 +185,14 @@ body {
 
 .boton-main {
   background-color: #000000;
-  border: none;
-  height: 2rem;
-  width: 8rem;
   color: #ffffff;
-  padding: 1rem, 3rem;
+  border: none;
+  width: 8rem;
+  height: 2rem;
   border-radius: 8px;
+  margin: 0px;
+  padding: 1px 6px;
+  font-weight: bold;
   font-size: smaller;
 }
 
@@ -198,12 +243,16 @@ img {
   width: 100%;
   height: 284px;
   border-radius: 4px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .kapu-card {
   width: 100%;
   height: 350px;
   border-radius: 4px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .productos-container {
@@ -236,6 +285,7 @@ img {
 }
 .infaltable-container .infaltable-tipografia {
   color: #ffffff;
+  font-weight: bolder;
   font-size: 24px;
   text-align: center;
 }
@@ -249,52 +299,11 @@ img {
 }
 
 .email {
-  border-radius: 4px;
   width: 100%;
-  margin: 6px 0px;
   height: 32px;
+  border-radius: 4px;
+  margin: 6px 0px;
   padding: 6px;
-}
-
-/*Inicio Footer*/
-.footer-container {
-  background-color: #000000;
-  width: 100%;
-}
-
-.footer-container a {
-  font-size: 16px;
-  font-weight: lighter;
-}
-
-.footer-container h3 {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: bolder;
-}
-
-.enlaces-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.enlaces-container ul {
-  padding: 0%;
-  margin: 0%;
-}
-
-.logo-footer {
-  margin: 20px, 0px, 20px, 0px;
-  padding: 40px;
-}
-
-.enlaces {
-  padding: 20px;
-}
-
-ul {
-  list-style: none;
 }
 
 /*PAGE GIFT CARD*/
@@ -312,7 +321,9 @@ ul {
 .giftcard img {
   width: 85%;
   height: 70%;
+  border-radius: 0px;
   margin: 20px;
+  padding: 0px;
   justify-content: center;
 }
 
@@ -321,8 +332,8 @@ ul {
 }
 
 .gift h2 {
-  font-size: 32px;
   font-weight: bolder;
+  font-size: 32px;
 }
 
 /*PAGE UBICACION*/
@@ -342,6 +353,8 @@ ul {
   width: 100%;
   height: 100%;
   border-radius: 12px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .gps-img {
@@ -355,8 +368,8 @@ ul {
 }
 
 .ubi p {
-  font-size: 16px;
   font-weight: small;
+  font-size: 16px;
 }
 
 .direccion {
@@ -374,15 +387,15 @@ ul {
 }
 
 .preguntas h2 {
-  font-size: 28px;
   font-weight: bolder;
+  font-size: 28px;
   margin-block-end: 40px;
   align-content: center;
 }
 
 .preguntas h3 {
-  font-size: 20px;
   font-weight: bold;
+  font-size: 20px;
   margin-block-end: 20px;
   margin: 8px 0px;
 }
@@ -404,15 +417,11 @@ ul {
 .boton-productos {
   background-color: #ffffff;
   border: none;
-  border-radius: 4px;
   width: 180px;
   height: 32px;
-  color: #000000;
+  border-radius: 4px;
   margin: 6px 0px;
-}
-
-.filtros a {
-  text-decoration: none;
+  padding: 0px;
   color: #000000;
 }
 
@@ -426,6 +435,7 @@ ul {
 
 .todo {
   font-weight: bold;
+  font-size: 16px;
 }
 
 .center-container-productos h1 {
@@ -450,11 +460,17 @@ ul {
     display: inline-block;
     width: 36px;
     height: 36px;
+    border-radius: 0px;
+    margin: 0px;
+    padding: 0px;
   }
   .logo-header {
     display: inline-block;
     width: 124px;
     height: 60px;
+    border-radius: 0px;
+    margin: 0px;
+    padding: 0px;
   }
   /*Inicio main*/
   .categories {
@@ -471,16 +487,12 @@ ul {
   .slider {
     margin: 40px;
   }
-  img {
-    background-size: cover;
-    width: 100% px;
-    height: 284px;
-    border-radius: 4px;
-  }
   .kapu-card {
     width: 320px;
-    height: 350px;
+    height: 350;
     border-radius: 4px;
+    margin: 0px;
+    padding: 0px;
   }
   .productos-container {
     display: flex;
@@ -511,6 +523,7 @@ ul {
     width: 320px;
   }
   .infaltable-tipografia {
+    font-weight: bolder;
     font-size: 36px;
     text-align: center;
   }
@@ -521,22 +534,26 @@ ul {
     flex-direction: row;
   }
   .registro h3 {
+    font-weight: bold;
     font-size: 32px;
   }
   .registro p {
+    font-weight: bold;
     font-size: 24px;
   }
   .email {
-    border-radius: 4px;
     width: 300px;
-    margin: 6px 0px;
     height: 50px;
+    border-radius: 4px;
+    margin: 6px 0px;
     padding: 6px;
   }
   .boton-registro {
     width: 300px;
     height: 50px;
+    border-radius: 4px;
     margin: 6px 0px;
+    padding: 0px;
   }
   .boton-input {
     display: flex;
@@ -564,6 +581,7 @@ ul {
     flex-direction: row;
   }
   .gift p {
+    font-weight: light;
     font-size: 20px;
   }
   .gift-info {
@@ -572,7 +590,9 @@ ul {
   .boton-giftcard {
     width: 300px;
     height: 50px;
+    border-radius: 4px;
     margin: 6px 0px;
+    padding: 0px;
   }
   /*PAGE UbICACION*/
   /*Inicio Main*/
@@ -582,6 +602,8 @@ ul {
     width: 100%;
     height: 100%;
     border-radius: 24px;
+    margin: 0px;
+    padding: 0px;
   }
   .gps-img {
     width: 80%;
@@ -594,8 +616,8 @@ ul {
     flex-direction: row;
   }
   .ubi p {
-    font-size: 24px;
     font-weight: small;
+    font-size: 24px;
   }
   .direccion {
     margin: 20px 0px;
@@ -604,7 +626,9 @@ ul {
   .boton-ubicacion {
     width: 300px;
     height: 50px;
+    border-radius: 4px;
     margin: 6px 0px;
+    padding: 0px;
   }
   /*PAGE ALMAYOR*/
   /*Inicio Main*/
@@ -620,15 +644,19 @@ ul {
   .boton-almayor {
     width: 300px;
     height: 50px;
+    border-radius: 4px;
     margin: 6px 0px;
+    padding: 0px;
   }
   .preguntas {
     justify-items: center;
   }
   .pregunta h3 {
+    font-weight: bold;
     font-size: 28px;
   }
   .pregunta p {
+    font-weight: bold;
     font-size: 20px;
   }
   .pregunta {
@@ -641,7 +669,16 @@ ul {
   }
   .todo {
     font-weight: bold;
+    font-size: 16px;
   }
+}
+* {
+  font-family: "Comfortaa", sans-serif;
+}
+
+body {
+  overflow: scroll !important;
+  padding: 0 !important;
 }
 
 /*# sourceMappingURL=style.css.map */
